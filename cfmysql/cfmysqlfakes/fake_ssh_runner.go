@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	"code.cloudfoundry.org/cli/plugin"
-	"github.com/andreasf/cf-mysql-plugin/cfmysql"
+	"github.com/deorbit/cf-mysql-plugin/cfmysql"
 )
 
 type FakeSshRunner struct {

@@ -5,12 +5,13 @@ import (
 	"fmt"
 
 	"bytes"
-	"code.cloudfoundry.org/cli/plugin"
-	sdkModels "code.cloudfoundry.org/cli/plugin/models"
-	pluginModels "github.com/andreasf/cf-mysql-plugin/cfmysql/models"
-	"github.com/andreasf/cf-mysql-plugin/cfmysql/resources"
 	"io"
 	"net/url"
+
+	"code.cloudfoundry.org/cli/plugin"
+	sdkModels "code.cloudfoundry.org/cli/plugin/models"
+	pluginModels "github.com/deorbit/cf-mysql-plugin/cfmysql/models"
+	"github.com/deorbit/cf-mysql-plugin/cfmysql/resources"
 )
 
 //go:generate counterfeiter . ApiClient

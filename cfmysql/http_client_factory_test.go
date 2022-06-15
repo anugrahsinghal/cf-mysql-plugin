@@ -1,11 +1,12 @@
 package cfmysql_test
 
 import (
-	. "github.com/andreasf/cf-mysql-plugin/cfmysql"
+	. "github.com/deorbit/cf-mysql-plugin/cfmysql"
+
+	"net/http"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"net/http"
 )
 
 var _ = Describe("HttpClientFactory", func() {

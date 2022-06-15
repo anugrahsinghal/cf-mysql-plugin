@@ -4,7 +4,7 @@ package cfmysqlfakes
 import (
 	"sync"
 
-	"github.com/andreasf/cf-mysql-plugin/cfmysql"
+	"github.com/deorbit/cf-mysql-plugin/cfmysql"
 )
 
 type FakeRandWrapper struct {

@@ -1,14 +1,15 @@
 package cfmysql_test
 
 import (
-	. "github.com/andreasf/cf-mysql-plugin/cfmysql"
+	. "github.com/deorbit/cf-mysql-plugin/cfmysql"
 
 	"errors"
-	"github.com/andreasf/cf-mysql-plugin/cfmysql/cfmysqlfakes"
-	"github.com/andreasf/cf-mysql-plugin/cfmysql/netfakes"
+	"net"
+
+	"github.com/deorbit/cf-mysql-plugin/cfmysql/cfmysqlfakes"
+	"github.com/deorbit/cf-mysql-plugin/cfmysql/netfakes"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"net"
 )
 
 var _ = Describe("PortWaiter", func() {

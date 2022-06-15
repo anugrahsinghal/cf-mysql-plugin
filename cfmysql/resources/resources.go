@@ -1,12 +1,13 @@
 package resources
 
 import (
-	"code.cloudfoundry.org/cli/cf/api/resources"
 	"encoding/json"
 	"fmt"
-	"github.com/andreasf/cf-mysql-plugin/cfmysql/models"
 	"strconv"
 	"strings"
+
+	"code.cloudfoundry.org/cli/cf/api/resources"
+	"github.com/deorbit/cf-mysql-plugin/cfmysql/models"
 )
 
 type ServiceBindingResource struct {

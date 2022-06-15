@@ -1,10 +1,11 @@
 package main
 
 import (
-	"code.cloudfoundry.org/cli/plugin"
 	"fmt"
-	"github.com/andreasf/cf-mysql-plugin/cfmysql"
 	"os"
+
+	"code.cloudfoundry.org/cli/plugin"
+	"github.com/deorbit/cf-mysql-plugin/cfmysql"
 )
 
 func main() {

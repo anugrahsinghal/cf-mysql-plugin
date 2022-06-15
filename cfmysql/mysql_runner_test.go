@@ -2,11 +2,12 @@ package cfmysql_test
 
 import (
 	"errors"
-	. "github.com/andreasf/cf-mysql-plugin/cfmysql"
-	"github.com/andreasf/cf-mysql-plugin/cfmysql/cfmysqlfakes"
+	"os"
+
+	. "github.com/deorbit/cf-mysql-plugin/cfmysql"
+	"github.com/deorbit/cf-mysql-plugin/cfmysql/cfmysqlfakes"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"os"
 )
 
 var _ = Describe("MysqlRunner", func() {

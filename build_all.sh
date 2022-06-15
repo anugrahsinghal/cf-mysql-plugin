@@ -71,24 +71,24 @@ print_release_yaml() {
   company:
   authors:
   - name: Andreas Fleig
-    homepage: https://github.com/andreasf
+    homepage: https://github.com/deorbit
     contact: afleig@pivotal.io
-  homepage: https://github.com/andreasf/cf-mysql-plugin
+  homepage: https://github.com/deorbit/cf-mysql-plugin
   binaries:
   - platform: osx
-    url: https://github.com/andreasf/cf-mysql-plugin/releases/download/v${version}/${BINARY}-darwin-amd64
+    url: https://github.com/deorbit/cf-mysql-plugin/releases/download/v${version}/${BINARY}-darwin-amd64
     checksum: ${hash_darwin_amd64}
   - platform: win64
-    url: https://github.com/andreasf/cf-mysql-plugin/releases/download/v${version}/${BINARY}-amd64.exe
+    url: https://github.com/deorbit/cf-mysql-plugin/releases/download/v${version}/${BINARY}-amd64.exe
     checksum: ${hash_windows_amd64}
   - platform: win32
-    url: https://github.com/andreasf/cf-mysql-plugin/releases/download/v${version}/${BINARY}-386.exe
+    url: https://github.com/deorbit/cf-mysql-plugin/releases/download/v${version}/${BINARY}-386.exe
     checksum: ${hash_windows_386}
   - platform: linux32
-    url: https://github.com/andreasf/cf-mysql-plugin/releases/download/v${version}/${BINARY}-linux-386
+    url: https://github.com/deorbit/cf-mysql-plugin/releases/download/v${version}/${BINARY}-linux-386
     checksum: ${hash_linux_386}
   - platform: linux64
-    url: https://github.com/andreasf/cf-mysql-plugin/releases/download/v${version}/${BINARY}-linux-amd64
+    url: https://github.com/deorbit/cf-mysql-plugin/releases/download/v${version}/${BINARY}-linux-amd64
     checksum: ${hash_linux_amd64}
 EOF
 }

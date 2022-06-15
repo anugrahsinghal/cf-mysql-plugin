@@ -1,13 +1,14 @@
 package resources_test
 
 import (
-	. "github.com/andreasf/cf-mysql-plugin/cfmysql/resources"
+	. "github.com/deorbit/cf-mysql-plugin/cfmysql/resources"
 
-	"code.cloudfoundry.org/cli/cf/api/resources"
 	"encoding/json"
 	"errors"
-	"github.com/andreasf/cf-mysql-plugin/cfmysql/models"
-	"github.com/andreasf/cf-mysql-plugin/cfmysql/test_resources"
+
+	"code.cloudfoundry.org/cli/cf/api/resources"
+	"github.com/deorbit/cf-mysql-plugin/cfmysql/models"
+	"github.com/deorbit/cf-mysql-plugin/cfmysql/test_resources"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

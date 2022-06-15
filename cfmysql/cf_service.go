@@ -1,11 +1,12 @@
 package cfmysql
 
 import (
+	"fmt"
+	"io"
+
 	"code.cloudfoundry.org/cli/plugin"
 	sdkModels "code.cloudfoundry.org/cli/plugin/models"
-	"fmt"
-	pluginModels "github.com/andreasf/cf-mysql-plugin/cfmysql/models"
-	"io"
+	pluginModels "github.com/deorbit/cf-mysql-plugin/cfmysql/models"
 )
 
 //go:generate counterfeiter . CfService
