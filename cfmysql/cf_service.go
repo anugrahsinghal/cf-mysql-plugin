@@ -55,6 +55,7 @@ func (self *cfService) GetStartedApps(cliConnection plugin.CliConnection) ([]sdk
 func (self *cfService) OpenSshTunnel(cliConnection plugin.CliConnection, toService MysqlService, apps []sdkModels.GetAppsModel, localPort int) {
 	throughAppIndex := self.randWrapper.Intn(len(apps))
 	throughApp := apps[throughAppIndex].Name
+	fmt.Printf("Tunneling through random app %s\n", throughApp)
 	go self.sshRunner.OpenSshTunnel(cliConnection, toService, throughApp, localPort)
 
 	self.portWaiter.WaitUntilOpen(localPort)
