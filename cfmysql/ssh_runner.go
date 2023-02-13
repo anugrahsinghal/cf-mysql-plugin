@@ -19,7 +19,7 @@ type sshRunner struct{}
 
 func (self *sshRunner) OpenSshTunnel(cliConnection plugin.CliConnection, toService MysqlService, throughApp string, localPort int) {
 	tunnelSpec := strconv.Itoa(localPort) + ":" + toService.Hostname + ":" + toService.Port
-	fmt.Printf("ssh %s -N -L %s \n", throughApp, tunnelSpec)
+	fmt.Printf("-- ssh %s -N -L %s \n", throughApp, tunnelSpec)
 	args, err := cliConnection.CliCommand("ssh", throughApp, "-N", "-L", tunnelSpec)
 
 	if err != nil {
